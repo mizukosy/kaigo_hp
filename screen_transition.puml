@@ -1,0 +1,43 @@
+@startuml 画面遷延図
+[*] -> top
+
+top --> move_in
+move_in --> form
+
+top --> ss
+ss --> form
+
+top --> day
+day --> form
+
+top --> 居宅
+居宅 --> form
+
+form --> top
+
+
+
+move_in : 概要
+move_in : form
+
+ss : 概要
+ss : form
+
+day : 一日の流れ
+day : form
+
+居宅 : 相談の流れ
+居宅 : form
+
+top : サービス.twitter.
+
+form : 共通:name.tel.e-mail.日時
+form : move_in:
+form : ss:初めて
+form : day:
+form : 居宅:
+
+
+@enduml
+
+
